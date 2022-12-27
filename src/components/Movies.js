@@ -1,59 +1,20 @@
 import React from 'react'
 import styled from 'styled-components'
+import DisneyPlus from './DisneyPlus'
 
 function Movies() {
   return (
     <Container>
+
         <h4>Recomended for You</h4>
         <Content>
-            <Wrap>
-            <img  src='https://images.pexels.com/photos/3411134/pexels-photo-3411134.jpeg?auto=compress&cs=tinysrgb&w=600' />
-            </Wrap>
-            <Wrap>
-            <img src='https://images.pexels.com/photos/3411134/pexels-photo-3411134.jpeg?auto=compress&cs=tinysrgb&w=600' />
-            </Wrap>
-            <Wrap>
-            <img src='https://images.pexels.com/photos/3411134/pexels-photo-3411134.jpeg?auto=compress&cs=tinysrgb&w=600' />
-            </Wrap>
-            <Wrap>
-            <img src='https://images.pexels.com/photos/3411134/pexels-photo-3411134.jpeg?auto=compress&cs=tinysrgb&w=600' />
-            </Wrap>
-            
-            <Wrap>
-            <img src='https://images.pexels.com/photos/3411134/pexels-photo-3411134.jpeg?auto=compress&cs=tinysrgb&w=600' />
-            </Wrap>
-            
-            <Wrap>
-            <img src='https://images.pexels.com/photos/3411134/pexels-photo-3411134.jpeg?auto=compress&cs=tinysrgb&w=600' />
-            </Wrap>
-            
-            <Wrap>
-            <img src='https://images.pexels.com/photos/3411134/pexels-photo-3411134.jpeg?auto=compress&cs=tinysrgb&w=600' />
-            </Wrap>
-            <Wrap>
-            <img src='https://images.pexels.com/photos/3411134/pexels-photo-3411134.jpeg?auto=compress&cs=tinysrgb&w=600' />
-            </Wrap>
-            <Wrap>
-            <img src='https://images.pexels.com/photos/3411134/pexels-photo-3411134.jpeg?auto=compress&cs=tinysrgb&w=600' />
-            </Wrap>
-            <Wrap>
-            <img src='https://images.pexels.com/photos/3411134/pexels-photo-3411134.jpeg?auto=compress&cs=tinysrgb&w=600' />
-            </Wrap>
-            <Wrap>
-            <img src='https://images.pexels.com/photos/3411134/pexels-photo-3411134.jpeg?auto=compress&cs=tinysrgb&w=600' />
-            </Wrap>
-            <Wrap>
-            <img src='https://images.pexels.com/photos/3411134/pexels-photo-3411134.jpeg?auto=compress&cs=tinysrgb&w=600' />
-            </Wrap>
-            <Wrap>
-            <img src='https://images.pexels.com/photos/3411134/pexels-photo-3411134.jpeg?auto=compress&cs=tinysrgb&w=600' />
-            </Wrap>
-            <Wrap>
-            <img src='https://images.pexels.com/photos/3411134/pexels-photo-3411134.jpeg?auto=compress&cs=tinysrgb&w=600' />
-            </Wrap>
-            <Wrap>
-            <img src='https://images.pexels.com/photos/3411134/pexels-photo-3411134.jpeg?auto=compress&cs=tinysrgb&w=600' />
-            </Wrap>
+            {DisneyPlus.map((movie) => {
+                return (
+                    <Wrap key={movie.type}>
+                        <img  src={movie.CardImg} />
+                    </Wrap>
+                )
+            })}
             
         </Content>
     </Container>

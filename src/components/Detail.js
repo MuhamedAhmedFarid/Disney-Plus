@@ -1,10 +1,17 @@
 import React from "react";
 import styled from "styled-components";
+import Movies from "./Movies";
+import DisneyPlus from "./DisneyPlus";
 function Detail() {
   return (
     <Container>
-      <Background>
-        <img src="https://images.pexels.com/photos/3411135/pexels-photo-3411135.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+      <Background >
+        {DisneyPlus.map(movie => {
+          return (
+            <img src={movie.BackgroundImg} />
+          )
+        })}
+        
       </Background>
       <Imgtitle>
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy580220TMPLLWqSwU8vsYYFuYqmTz24y-UoTvor7nRttWCwSyf1Yhn-iLrKweo1w8868&usqp=CAU" />

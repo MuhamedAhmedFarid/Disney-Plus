@@ -3,9 +3,18 @@ import styled from "styled-components";
 import ImgSlider from "./ImgSlider";
 import Movies from "./Movies";
 import Viewrs from "./Viewrs";
-
-
+import DisneyPlus from "./DisneyPlus";
 function Home() {
+  
+
+  // const [movie, setMovie] = React.useState()
+  // React.useEffect(() => { // whenever i load the page make a requset to the data
+  //   db.collection("movies").onSnapshot((snapshot) => {
+  //     console.log(snapshot);
+  //   })
+  // }, [])
+  
+
   return <Container>
     <ImgSlider />
     <Viewrs />
